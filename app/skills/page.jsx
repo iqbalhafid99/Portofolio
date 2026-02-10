@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import FadeUp from "../components/motion/fadeUp";
+import FadeUp from "../components/motion/FadeUp";
 import SlideIn from "../components/motion/SlideIn";
 import { motion } from "motion/react";
 
