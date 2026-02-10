@@ -5,12 +5,10 @@ import { Cursor } from "motion-plus/react";
 const CustomCursor = () => {
   return (
     <Cursor
-      dotSize={8}
-      ringSize={45}
-      smoothness={0.18}
-      dotClassName="bg-primary shadow-lg shadow-primary"
-      ringClassName="border-primary"
-      className="mix-blend-difference"
+      style={{
+        mixBlendMode: "difference",
+        filter: "drop-shadow(0 0 2px cyan)",
+      }}
     />
   );
 };

@@ -54,7 +54,7 @@ const Service = () => {
                   width={124}
                   height={124}
                   priority={true}
-                  className="w-auto h-auto pt-12 pl-8"
+                  className=" pt-12 pl-8"
                 />
               </div>
               <div className="px-8 mt-6">
@@ -83,7 +83,7 @@ const Service = () => {
                   width={124}
                   height={124}
                   priority={true}
-                  className="w-auto h-auto pt-12 pl-8"
+                  className=" pt-12 pl-8"
                 />
               </div>
               <FadeUp delay={0.8}></FadeUp>
@@ -113,7 +113,7 @@ const Service = () => {
                   width={124}
                   height={124}
                   priority={true}
-                  className="w-auto h-auto pt-12 pl-8"
+                  className=" pt-12 pl-8"
                 />
               </div>
               <div className="px-8 mt-6">

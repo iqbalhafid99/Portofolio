@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "./components/motion/FadeUp";
@@ -57,41 +58,49 @@ export default function Home() {
             </FadeUp>
             <FadeUp delay={1}>
               <div className="flex gap-9 items-center justify-center mt-4 lg:justify-start">
-                <Link href={"/"}>
+                <Link href={"https://www.instagram.com/iqbalhafid_"}>
                   <Image
                     src="/assets/images/Instagram.png"
                     alt="Logo"
                     width={27}
                     height={27}
                     priority={true}
-                    className="w-auto h-auto"
+                    className="w-auto h-auto hover:scale-110 duration-300"
                   />
                 </Link>
-                <Link href={"/"}>
+                <Link href={"https://github.com/iqbalhafid99"}>
                   <Image
                     src="/assets/images/github.png"
                     alt="Logo"
                     width={27}
                     height={27}
                     priority={true}
-                    className="w-auto h-auto"
+                    className="w-auto h-auto hover:scale-110 duration-300"
                   />
                 </Link>
-                <Link href={"/"}>
+                <Link href={"https://www.linkedin.com/in/mohiqbalhafid"}>
                   <Image
                     src="/assets/images/Linkedin.png"
                     alt="Logo"
                     width={27}
                     height={27}
                     priority={true}
-                    className="w-auto h-auto"
+                    className="w-auto h-auto hover:scale-110 duration-300"
                   />
                 </Link>
               </div>
             </FadeUp>
             <div className="mt-10">
               <FadeUp delay={1.1}>
-                <button className="mb-20 py-2 px-6 bg-primary text-white font-bold rounded-xl hover:scale-105 hover:bg-red-500 hover:shadow-lg hover:shadow-primary duration-300">
+                <button
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = "/assets/resume.pdf";
+                    link.download = "resume.pdf";
+                    link.click();
+                  }}
+                  className="mb-20 py-2 px-6 bg-primary text-white font-bold rounded-xl hover:scale-105 hover:bg-red-500 hover:shadow-lg hover:shadow-primary duration-300"
+                >
                   My Resume
                 </button>
               </FadeUp>
