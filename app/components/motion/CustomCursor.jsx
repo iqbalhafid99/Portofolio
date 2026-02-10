@@ -3,7 +3,14 @@
 import { Cursor } from "motion-plus/react";
 
 const CustomCursor = () => {
-  return <Cursor />;
+  return (
+    <Cursor
+      style={{
+        mixBlendMode: "difference",
+        filter: "drop-shadow(0 0 2px cyan)",
+      }}
+    />
+  );
 };
 
 export default CustomCursor;
