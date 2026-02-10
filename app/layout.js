@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light">
       <body>
         <Navbar />
-        <PageTransition>{children}</PageTransition>
+        {children}
       </body>
     </html>
   );
