@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import FadeUp from "./components/motion/fadeUp";
+import FadeUp from "./components/motion/FadeUp";
 
 export default function Home() {
   return (

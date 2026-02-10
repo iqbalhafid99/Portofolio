@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import FadeUp from "../components/motion/fadeUp";
+import FadeUp from "../components/motion/FadeUp";
 
 // Import Swiper styles
 import "swiper/css";
