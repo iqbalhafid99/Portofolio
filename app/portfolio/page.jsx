@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "motion/react";
 import React from "react";
+import Image from "next/image";
+import { delay } from "motion";
 
 const projects = [
   {
@@ -45,7 +47,7 @@ const Portfolio = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.5 },
+      transition: { duration: 0.5, delay: 0.5 },
     },
   };
 
@@ -65,9 +67,11 @@ const Portfolio = () => {
           className="group rounded-3xl overflow-hidden shadow-xl bg-white border"
         >
           <div className="relative overflow-hidden">
-            <img
+            <Image
               src={p.image}
               alt={p.title}
+              width={600}
+              height={400}
               className="group-hover:scale-110 duration-500"
             />
 

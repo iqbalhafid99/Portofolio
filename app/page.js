@@ -17,7 +17,7 @@ export default function Home() {
       </div>
       <div className="mx-8 md:mx-20 mt-2 flex lg:flex-row-reverse lg:mt-0 lg:gap-52 md:mt-32 flex-col items-center md:justify-center">
         <div>
-          <FadeUp delay={0.2}>
+          <FadeUp>
             <Image
               src="/assets/images/Header.png"
               alt="Logo"
@@ -28,28 +28,34 @@ export default function Home() {
             />
           </FadeUp>
         </div>
-        <FadeUp delay={0.4}>
+        <FadeUp delay={0.6}>
           <div className="text-center lg:text-left -mt-8 md:mt-0">
-            <h3 className="text-black font-semibold text-2xl">Hello! I am</h3>
-            <h2 className="text-primary font-[600] text-3xl my-8">
-              Moh. Iqbal Hafid
-            </h2>
-            <div className="relative -z-10">
-              <h1 className="text-[#8f8f8f] font-[800] text-6xl md:text-8xl mt-4">
-                Web <br />
-                Developer
-              </h1>
-              <h1 className="text-primary font-[800] text-6xl absolute -top-[19px] left-[2px] md:text-8xl mt-4">
-                Web <br />
-                Developer
-              </h1>
-            </div>
-            <p className="mt-4 text-[#8f8f8f]">
-              Since creative designers often interact with <br /> creative
-              teams, managers and clients, <br /> they need strong communication
-              skills.
-            </p>
-            <FadeUp delay={0.6}>
+            <FadeUp delay={0.7}>
+              <h3 className="text-black font-semibold text-2xl">Hello! I am</h3>
+            </FadeUp>
+            <FadeUp delay={0.8}>
+              <h2 className="text-primary font-[600] text-3xl my-8">
+                Moh. Iqbal Hafid
+              </h2>
+            </FadeUp>
+            <FadeUp delay={0.9}>
+              <div className="relative -z-10">
+                <h1 className="text-[#8f8f8f] font-[800] text-6xl md:text-8xl mt-4">
+                  Web <br />
+                  Developer
+                </h1>
+                <h1 className="text-primary font-[800] text-6xl absolute -top-[19px] left-[2px] md:text-8xl mt-4">
+                  Web <br />
+                  Developer
+                </h1>
+              </div>
+              <p className="mt-4 text-[#8f8f8f]">
+                Since creative designers often interact with <br /> creative
+                teams, managers and clients, <br /> they need strong
+                communication skills.
+              </p>
+            </FadeUp>
+            <FadeUp delay={1}>
               <div className="flex gap-9 items-center justify-center mt-4 lg:justify-start">
                 <Link href={"/"}>
                   <Image
@@ -84,7 +90,7 @@ export default function Home() {
               </div>
             </FadeUp>
             <div className="mt-10">
-              <FadeUp delay={0.8}>
+              <FadeUp delay={1.1}>
                 <button className="mb-20 py-2 px-6 bg-primary text-white font-bold rounded-xl hover:scale-105 hover:bg-red-500 hover:shadow-lg hover:shadow-primary duration-300">
                   My Resume
                 </button>

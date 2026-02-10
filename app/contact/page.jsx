@@ -23,7 +23,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
             className="flex flex-col gap-2 md:gap-14"
           >
             <div className="flex items-center">
@@ -72,7 +72,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
             className="mt-24 md:mt-0"
           >
             <div className="flex md:gap-4 lg:gap-20 flex-col md:flex-row">

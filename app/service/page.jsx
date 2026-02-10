@@ -15,7 +15,7 @@ import { Pagination } from "swiper/modules";
 
 const Service = () => {
   return (
-    <div className="mb-10">
+    <div className="relative">
       <div>
         <Image
           src="/assets/images/service.png"
@@ -27,7 +27,7 @@ const Service = () => {
         />
       </div>
       <div className="mx-12">
-        <FadeUp delay={0.2}>
+        <FadeUp delay={0.5}>
           <div className="text-center">
             <h1 className="mt-5 md:text-5xl text-3xl font-bold">
               Services<span className="font-mono text-primary">.</span>
@@ -40,7 +40,7 @@ const Service = () => {
           </div>
         </FadeUp>
         <div className="hidden md:flex flex-wrap items-center gap-10 justify-center md:mt-20">
-          <FadeUp delay={0.4}>
+          <FadeUp delay={0.6}>
             <div className="md:w-[350px] md:h-[450px] rounded-3xl shadow-xl border relative hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
               <div className="flex gap-3 absolute top-6 right-6">
                 <div className="w-[25px] h-[25px] bg-primary rounded-full shadow-md shadow-primary"></div>
@@ -69,7 +69,7 @@ const Service = () => {
               </button>
             </div>
           </FadeUp>
-          <FadeUp delay={0.6}>
+          <FadeUp delay={0.7}>
             <div className="md:w-[350px] md:h-[450px] rounded-3xl shadow-xl border relative hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
               <div className="flex gap-3 absolute top-6 right-6">
                 <div className="w-[25px] h-[25px] bg-primary rounded-full shadow-md shadow-primary"></div>
@@ -86,7 +86,7 @@ const Service = () => {
                   className="w-auto h-auto pt-12 pl-8"
                 />
               </div>
-              <FadeUp delay={0.6}></FadeUp>
+              <FadeUp delay={0.8}></FadeUp>
               <div className="px-8 mt-6">
                 <h1 className="text-3xl font-bold">UI/UX Design</h1>
                 <p className="text-xl mt-3">
@@ -99,7 +99,7 @@ const Service = () => {
               </button>
             </div>
           </FadeUp>
-          <FadeUp delay={0.8}>
+          <FadeUp delay={0.9}>
             <div className="md:w-[350px] md:h-[450px] rounded-3xl shadow-xl border relative hover:scale-[1.03] hover:shadow-2xl transition-all duration-300">
               <div className="flex gap-3 absolute top-6 right-6">
                 <div className="w-[25px] h-[25px] bg-primary rounded-full shadow-md shadow-primary"></div>
