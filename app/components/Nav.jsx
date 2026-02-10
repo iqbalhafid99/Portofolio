@@ -101,13 +101,13 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div>
-            <Link onClick={handleClick} href={"/portfolio"}>
+          <Link onClick={handleClick} href={"/portfolio"}>
+            <div>
               <button className="hover:scale-110 hover:shadow-xl duration-300 mt-20 px-6 py-3 bg-black text-white rounded-xl font-semibold">
                 Portfolio Here
               </button>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </nav>
