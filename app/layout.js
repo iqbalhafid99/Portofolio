@@ -1,4 +1,4 @@
-import PageTransition from "./components/motion/PageTransition";
+import CustomCursor from "./components/motion/CustomCursor";
 import Navbar from "./components/Nav";
 import "./globals.css";
 export const metadata = {
@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <body>
+        <CustomCursor />
         <Navbar />
         {children}
       </body>
