@@ -92,15 +92,7 @@ export default function Home() {
             </FadeUp>
             <div className="mt-10">
               <FadeUp delay={1.1}>
-                <button
-                  onClick={() => {
-                    const link = document.createElement("a");
-                    link.href = "/assets/resume.pdf";
-                    link.download = "resume.pdf";
-                    link.click();
-                  }}
-                  className="mb-20 py-2 px-6 bg-primary text-white font-bold rounded-xl hover:scale-105 hover:bg-red-500 hover:shadow-lg hover:shadow-primary duration-300"
-                >
+                <button className="mb-20 py-2 px-6 bg-primary text-white font-bold rounded-xl hover:scale-105 hover:bg-red-500 hover:shadow-lg hover:shadow-primary duration-300">
                   My Resume
                 </button>
               </FadeUp>
