@@ -1,19 +1,31 @@
+"use client";
+
+import { motion } from "motion/react";
 import React from "react";
 import { FaRegMap } from "react-icons/fa";
 import { BsEnvelopeAt, BsTelephone, BsInstagram } from "react-icons/bs";
+import FadeUp from "../components/motion/FadeUp";
 
 const Contact = () => {
   return (
     <div>
       <div className="lg:mx-20">
-        <div className="text-center">
-          <h1 className="mt-5 md:text-5xl text-3xl font-bold">
-            Contact<span className="font-mono text-primary">.</span>
-          </h1>
-          {/* <p className="mt-6 text-base italic">Lets Talk With Me</p> */}
-        </div>
+        <FadeUp>
+          <div className="text-center">
+            <h1 className="mt-5 md:text-5xl text-3xl font-bold">
+              Contact<span className="font-mono text-primary">.</span>
+            </h1>
+            {/* <p className="mt-6 text-base italic">Lets Talk With Me</p> */}
+          </div>
+        </FadeUp>
         <div className="mx-10 mt-10 md:flex justify-center md:gap-20 lg:gap-60">
-          <div className="flex flex-col gap-2 md:gap-14">
+          <motion.div
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="flex flex-col gap-2 md:gap-14"
+          >
             <div className="flex items-center">
               <div className="w-12 h-12 flex items-center justify-center rounded-full bg-primary border border-black shadow-lg shadow-primary">
                 <FaRegMap size={25} color="white" />
@@ -54,9 +66,15 @@ const Contact = () => {
                 <p className="mt-2 text-base italic">@iqbalhafid_</p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* form */}
-          <div className="mt-24 md:mt-0">
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            className="mt-24 md:mt-0"
+          >
             <div className="flex md:gap-4 lg:gap-20 flex-col md:flex-row">
               <div>
                 <label className="font-bold text-slate-400 ml-4">
@@ -114,7 +132,7 @@ const Contact = () => {
                 SEND MESSAGE
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
